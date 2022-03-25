@@ -15,6 +15,11 @@ import ExersiesUseEffect from './components/useEffect/ExersiesUseEffect';
 import FakeChatApp from './components/useEffect/FakeChatApp';
 import UseLayoutEffect from './components/useEffect/UseLayoutEffect';
 import UseRefComponent from './components/useRef/UseRefComponent';
+import MemoComponent from './components/memo/MemoComponent';
+import UseCallback from './components/useCallback/UseCallback';
+import UseMemo from './components/memo/UseMemo';
+import UseReducer from './components/useReducer/UseReducer';
+import TodoList from './components/useReducer/TodoList';
 function App() {
   return (
     <div className="App">
@@ -33,7 +38,12 @@ function App() {
       {/* <ExersiesUseEffect/> */}
       {/* <FakeChatApp/> */}
       {/* <UseLayoutEffect /> */}
-      <UseRefComponent/>
+      {/* <UseRefComponent/> */}
+      {/* <MemoComponent/> */}
+      {/* <UseCallback/> */}
+      {/* <UseMemo /> */}
+      {/* <UseReducer/> */}
+      <TodoList/>
     </div>
   );
 }
