@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import ThemeProvider from './ThemeContext';
 
 function emitComment(id) {
   setInterval(() => {
@@ -16,9 +17,13 @@ function emitComment(id) {
 emitComment(1)
 emitComment(2)
 emitComment(3)
+
+const theme = 'dark';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
